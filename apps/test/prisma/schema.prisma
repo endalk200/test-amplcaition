@@ -30,3 +30,8 @@ model NewEnt {
   id        String   @id @default(cuid())
   updatedAt DateTime @updatedAt
 }
+
+model Address {
+  id        String   @id @default(cuid())
+  name      String?
+}
