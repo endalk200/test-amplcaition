@@ -24,3 +24,8 @@ model Product {
   name      String?
   updatedAt DateTime @updatedAt
 }
+
+model Address {
+  id        String   @id @default(cuid())
+  name      String?
+}
