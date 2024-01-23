@@ -25,6 +25,12 @@ model Product {
   updatedAt DateTime @updatedAt
 }
 
+model NewEnt {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
 model Address {
   id        String   @id @default(cuid())
   name      String?
